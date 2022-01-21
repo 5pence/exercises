@@ -75,5 +75,5 @@ const videoData = [
 
 const filtered = videoData.filter(people => people.present === true);
 const mapped = filtered.map(person => person.name);
-
-console.log(mapped);
+const reduced = mapped.reduce(person => person);
+console.log(reduced);
